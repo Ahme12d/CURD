@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="w-50 mx-auto py-5">
+
+<div class="form-group mb-3">
+    <label for="productName">productName</label>
+    <input type="text" id="productName" class="form-control">
+</div>
+<div class="form-group mb-3">
+    <label for="productPrice">productPrice</label>
+    <input type="number" id="productPrice" class="form-control">
+</div>
+<div class="form-group mb-3">
+    <label for="productCat">productCat</label>
+    <input type="text" id="productCat" class="form-control">
+</div>
+<div class="form-group mb-3">
+    <label for="productDesc">productDesc</label>
+    <input type="text" id="productDesc" class="form-control">
+</div>
+
+<button class="btn btn-outline-info" onclick="addproduct()" id="mainbtn">Add product</button>
+<button class="btn btn-outline-warning d-none" onclick="Update()" id="updatebtn">Update</button>
+
+
+</div>
+
+
+<div class="w-50 mx-auto py-5">
+    <label for="">search</label>
+    <input type="text" oninput="search(this.value)" class="form-control">
+</div>
+
+<div class="w-50 mx-auto py-5">
+
+    <table class="table text-center">
+    <thead>
+    <th>index</th>
+    <th>productName</th>
+    <th>productPrice</th>
+    <th>productCat</th>
+    <th>productDesc</th>
+    <th>Update</th>
+    <th>Delete</th>
+    </thead>
+    <tbody id="tabledata">
+  
+        
+    </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
